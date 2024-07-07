@@ -20,8 +20,7 @@ public class PlayerEnterBoat {
     private ActionResult onEnterBoat(PlayerEntity player, BoatEntity boat) {
         List<BlockPos> lilyPadPositions = BlockUtils.detectBlocksAroundPlayer(player    .getWorld(),
                 boat, Blocks.LILY_PAD, 1.6);
-        float newSpeed = boat.horizontalSpeed - boat.prevHorizontalSpeed;
-        int tick = 0;
+
         World world = player.getWorld();
         if (!lilyPadPositions.isEmpty()) {
             for (BlockPos pos : lilyPadPositions) {

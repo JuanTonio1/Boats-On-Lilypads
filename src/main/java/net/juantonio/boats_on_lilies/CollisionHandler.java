@@ -40,6 +40,11 @@ public class CollisionHandler {
             if (!state.getBlock().equals(Blocks.LILY_PAD)) {
                 return;
             }
+            /*
+             * reset tick timer to 0 when boat touches it
+             * . It prevents submerge property from being
+             * turned on and off constantly from player
+             */
             for (Map<String, Object> dataMap : dataList) {
                 BlockPos pos = (BlockPos) dataMap.get("pos");
                 if (!pos.equals(immutable)) {
@@ -153,6 +158,10 @@ public class CollisionHandler {
         incrementTick(world);
     }
 
+    /*
+     * tick timer for each lily to prevent alternating
+     * submerging value from player and boat collision
+     */
     private void incrementTick(World world) {
         int count = 0;
 
@@ -177,8 +186,10 @@ public class CollisionHandler {
         updateLists(server.getOverworld());
     }
 
+    //clean up cleanup
     private void serverStopping(MinecraftServer server) {
         World world = server.getOverworld();
+        // so absolutely no lily pad is eternal
         for (BlockPos pos : submergedList) {
             BlockState state = world.getBlockState(pos);
             world.setBlockState(pos, state.with(SUBMERGED, false));

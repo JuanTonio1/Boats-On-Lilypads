@@ -32,13 +32,17 @@ public class CustomLilyPadBlock extends LilyPadBlock {
         } else {
             if (entity instanceof PlayerEntity) {
                 BlockPos immutable = new BlockPos(pos);
+                // very scuffed anti-cut-player-in-half logic
                 if (entity.getVehicle() == null) {
+
                     if (CollisionHandler.submergedList.isEmpty()) {
+                        // This should never even happen
                         CollisionHandler.setCollidable(true, true, world, pos);
                         return;
                     }
                     boolean above = false;
                     boolean isNonCollidable = true;
+
                     for (BlockPos blockPos : CollisionHandler.submergedList) {
                         if (!blockPos.equals(immutable)) {
                             continue;
@@ -55,6 +59,12 @@ public class CustomLilyPadBlock extends LilyPadBlock {
                     }
 
                     boolean boatTickHigh = false;
+
+                    /*
+                     * my very best effort to not make the player get
+                     * cut in half. Happens from time to time and
+                     * I may fix it prolly in the future
+                     */
                     if (above) {
                         for (Map<String, Object> dataMap : CollisionHandler.dataList) {
                             BlockPos blockPos = (BlockPos) dataMap.get("pos");
