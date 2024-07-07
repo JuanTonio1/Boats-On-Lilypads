@@ -19,15 +19,10 @@
 			"net.juantonio.boats_on_lilies.BoatsOnLilies"
 		],
 		"client": [
-			"net.juantonio.boats_on_lilies.BoatsOnLiliesClient"
 		]
 	},
 	"mixins": [
-		"boats-on-lilies.mixins.json",
-		{
-			"config": "boats-on-lilies.client.mixins.json",
-			"environment": "client"
-		}
+		"boats-on-lilies.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
