@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "net.juantonio.boats_on_lilies.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BlocksMixin",
+    "BoatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

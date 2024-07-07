@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "submerged=true" : [
+      {
+        "model":  "boats-on-lilies:block/lily_pad"
+      },
+      {
+        "model":  "boats-on-lilies:block/lily_pad",
+        "y": 90
+      },
+      {
+        "model":  "boats-on-lilies:block/lily_pad",
+        "y": 180
+      },
+      {
+        "model":  "boats-on-lilies:block/lily_pad",
+        "y": 270
+      }
+    ],
+    "submerged=false": [
+      {
+        "model": "minecraft:block/lily_pad"
+      },
+      {
+        "model": "minecraft:block/lily_pad",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/lily_pad",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/lily_pad",
+        "y": 270
+      }
+    ]
+  }
+}

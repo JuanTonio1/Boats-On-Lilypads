@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "boats-on-lilies",
+	"version": "${version}",
+	"name": "Boats On Lilies",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/boats-on-lilies/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.juantonio.boats_on_lilies.BoatsOnLilies"
+		],
+		"client": [
+			"net.juantonio.boats_on_lilies.BoatsOnLiliesClient"
+		]
+	},
+	"mixins": [
+		"boats-on-lilies.mixins.json",
+		{
+			"config": "boats-on-lilies.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
