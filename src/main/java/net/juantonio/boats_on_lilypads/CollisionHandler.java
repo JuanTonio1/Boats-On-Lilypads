@@ -1,4 +1,4 @@
-package net.juantonio.boats_on_lilies;
+package net.juantonio.boats_on_lilypads;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static net.juantonio.boats_on_lilies.CustomLilyPadBlock.SUBMERGED;
+import static net.juantonio.boats_on_lilypads.CustomLilyPadBlock.SUBMERGED;
 
 public class CollisionHandler {
 

@@ -1,4 +1,4 @@
-package net.juantonio.boats_on_lilies;
+package net.juantonio.boats_on_lilypads;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-import static net.juantonio.boats_on_lilies.CollisionHandler.MAX_TICK;
+import static net.juantonio.boats_on_lilypads.CollisionHandler.MAX_TICK;
 
 public class CustomLilyPadBlock extends LilyPadBlock {
 

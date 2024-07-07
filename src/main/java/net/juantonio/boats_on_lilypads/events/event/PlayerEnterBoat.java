@@ -1,8 +1,8 @@
-package net.juantonio.boats_on_lilies.events.event;
+package net.juantonio.boats_on_lilypads.events.event;
 
-import net.juantonio.boats_on_lilies.CollisionHandler;
-import net.juantonio.boats_on_lilies.events.inter.PlayerEnterBoatEvent;
-import net.juantonio.boats_on_lilies.util.BlockUtils;
+import net.juantonio.boats_on_lilypads.CollisionHandler;
+import net.juantonio.boats_on_lilypads.events.inter.PlayerEnterBoatEvent;
+import net.juantonio.boats_on_lilypads.util.BlockUtils;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.vehicle.BoatEntity;

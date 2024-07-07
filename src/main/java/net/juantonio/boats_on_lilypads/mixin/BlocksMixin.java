@@ -1,6 +1,6 @@
-package net.juantonio.boats_on_lilies.mixin;
+package net.juantonio.boats_on_lilypads.mixin;
 
-import net.juantonio.boats_on_lilies.CustomLilyPadBlock;
+import net.juantonio.boats_on_lilypads.CustomLilyPadBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.LilyPadBlock;

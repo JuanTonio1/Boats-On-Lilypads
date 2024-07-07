@@ -1,6 +1,5 @@
-package net.juantonio.boats_on_lilies.util;
+package net.juantonio.boats_on_lilypads.util;
 
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;

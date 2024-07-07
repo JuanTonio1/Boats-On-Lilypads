@@ -22,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"boats-on-lilies" {
+		"boats-on-lilypads" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

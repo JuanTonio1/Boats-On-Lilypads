@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "boats-on-lilies",
+	"id": "boats-on-lilypads",
 	"version": "${version}",
-	"name": "Boats On Lilies",
+	"name": "Boats On Lilypads",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,17 +12,17 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/boats-on-lilies/icon.png",
+	"icon": "assets/boats-on-lilypads/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.juantonio.boats_on_lilies.BoatsOnLilies"
+			"net.juantonio.boats_on_lilypads.BoatsOnLilypads"
 		],
 		"client": [
 		]
 	},
 	"mixins": [
-		"boats-on-lilies.mixins.json"
+		"boats-on-lilypads.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",

@@ -1,4 +1,4 @@
-package net.juantonio.boats_on_lilies.events.inter;
+package net.juantonio.boats_on_lilypads.events.inter;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;

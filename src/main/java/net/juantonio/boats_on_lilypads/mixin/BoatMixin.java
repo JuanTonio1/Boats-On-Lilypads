@@ -1,6 +1,6 @@
-package net.juantonio.boats_on_lilies.mixin;
+package net.juantonio.boats_on_lilypads.mixin;
 
-import net.juantonio.boats_on_lilies.events.inter.PlayerEnterBoatEvent;
+import net.juantonio.boats_on_lilypads.events.inter.PlayerEnterBoatEvent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.vehicle.BoatEntity;
