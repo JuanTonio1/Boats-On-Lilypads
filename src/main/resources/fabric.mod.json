@@ -3,9 +3,9 @@
 	"id": "boats-on-lilypads",
 	"version": "${version}",
 	"name": "Boats On Lilypads",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod that makes boats travel through lily pads instead of crashing into them.",
 	"authors": [
-		"Me!"
+		"JuanTonio"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
