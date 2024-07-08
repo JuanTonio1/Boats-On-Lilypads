@@ -25,7 +25,7 @@
 		"boats-on-lilypads.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
+		"fabricloader": "*",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
